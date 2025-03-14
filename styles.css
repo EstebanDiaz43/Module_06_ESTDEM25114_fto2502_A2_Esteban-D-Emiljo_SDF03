@@ -21,11 +21,18 @@ body {
 
 /* Header */
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .profile { 
     display: flex;  
     justify-content: center;
     align-items: center; 
     margin-bottom: 10px;
+    flex-direction: column;
 } 
 
 .profile-image img {
