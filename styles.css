@@ -131,7 +131,7 @@ ul {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     font-size: 12px;
-    opacity: 30%;
+    opacity: 1%;
     transition: opacity 1.5s ease-in-out;
     position: absolute;
     top: 0;
