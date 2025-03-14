@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .profile { 
@@ -40,13 +41,8 @@ body {
      border-radius: 100%;
      width: 250x; 
      height: 250px;
-     margin-bottom: 40px;
-}
-
-.header-text {
-   display: flex;
-   flex-direction: column;
-   margin-bottom: 40px;
+     margin-bottom: 30px;
+     margin-top: 60px;
 }
 
 .profile-user-settings {
@@ -80,19 +76,20 @@ body {
 
 .profile-stats {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px;
+    justify-content: center;
+    padding: none;
 }
 
-
 li {
-    margin: 10px;
+    margin: 15px;
 }
 
 ul {
     display: flex;
     list-style-type: none;
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;   
     
 }
 
