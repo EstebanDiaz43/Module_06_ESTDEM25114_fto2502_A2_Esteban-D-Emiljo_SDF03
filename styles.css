@@ -177,4 +177,40 @@ ul {
     100% { transform: rotate(360deg); }
 }
 
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    main {
+        padding: 10px;
+        max-width: 100%;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+    nav ul {
+        padding: 0;
+    }
+    main {
+        padding: 5px;
+    }
+    .grid-container, .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
 
