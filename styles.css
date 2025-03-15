@@ -161,15 +161,15 @@ ul {
 /* Loader */
 
 .loader {
-    margin: 0px auto;
+    margin: 20px auto;
     align-content: center;
     display: block;
     width: 50px;
     height: 50px;
     border: 5px solid #f3f3f3;
-    border-top: 5px solid #3498db;
+    border-top: 5px solid #17a145a7;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    animation: spin 0.4s linear infinite;
 }
 
 @keyframes spin {
@@ -178,39 +178,23 @@ ul {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
+@media all and (max-width: 600px) {
+    .container {
+      flex-wrap: wrap;
     }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .container > li {
+      flex: 1 1 50%;
     }
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    main {
-        padding: 10px;
-        max-width: 100%;
-    }
-   
-}
+  }
 
-@media (max-width: 480px) {
-    header {
-        padding: 0.5rem;
+  @media all and (max-width: 390px) {
+    .btn-profile-edit-btn {
+        flex: 1 1 50%;
+        height: 40px;
+        margin-bottom: 20px;
+       
+
     }
-    nav ul {
-        padding: 0;
-    }
-    main {
-        padding: 5px;
-    }
-    .grid-container, .image-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-}
+  }
 
 
